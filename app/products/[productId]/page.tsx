@@ -5,8 +5,11 @@ export default async function ProductDetail({ params }: { params: Promise<{ prod
             
             <h1 className="H1">Product detail {productId}</h1>
             <div className="row">
-                <div className="col-xs-12">
+                <div className="col-xs-6">
                     product infomation
+                </div>
+                <div className="col-xs-6">
+                    product infomation 2
                 </div>
             </div>
         </div>
