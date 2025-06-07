@@ -34,4 +34,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-https://www.youtube.com/watch?v=k9g6aVLH3p4&list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY&index=7
+https://www.youtube.com/watch?v=GCipVDqBD3k&t=67s
+
+
+## Noted
+install nodejs first
+
+install pnpm if not found
+
+```bash
+npm install -g pnpm
+```
+#### first time clone project open termimal and run command promt (package.json) this file save all library for project
+```
+npm install
+```
