@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { HeaderProvider } from "./_lib/HeaderContext.tsx"
  
 export const metadata: Metadata = {
   title: {
@@ -8,23 +9,22 @@ export const metadata: Metadata = {
 }
 export default function RootLayout({
   children,
-}: {
+}: {s
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="vi">
       <body>
         <div className="container">
-          <div className="mx-auto">
-            <header className="max-w-7xl bg-blue-300">Feat beaver grill</header>
+          <HeaderProvider>
             {children}
-            <footer className="max-w-7xl bg-black-300">
-              <h6>Keep in touch</h6>
-            </footer>
-          </div>
+          </HeaderProvider>
+          <footer className="bg-black-300">
+            <div className="max-w-7xl"></div>
+            <h6>Keep in touch</h6>
+          </footer>
         </div>
-        
-        </body>
+      </body>
     </html>
   )
 }
