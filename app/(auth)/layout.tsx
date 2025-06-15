@@ -24,13 +24,10 @@ export default function AuthLayout({
     () => (
       <nav>
         {navLink.map((link) => {
-          const isActive =
-            pathname === link.href ||
-            (pathname.startsWith(link.href) && link.href !== "/");
           return (
             <Link
               className={
-                "text-neutral-950 " + (isActive ? "font-bold underline" : "")
+                "text-neutral-950 " + (pathname === link.href ? "font-bold underline" : "")
               }
               href={link.href}
               key={link.name}

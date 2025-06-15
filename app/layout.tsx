@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { HeaderProvider } from "./_lib/HeaderContext.tsx"
+import { HeaderProvider } from "./_lib/HeaderContext";
  
 export const metadata: Metadata = {
   title: {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 export default function RootLayout({
   children,
-}: {s
+}: {
   children: React.ReactNode
 }) {
   return (

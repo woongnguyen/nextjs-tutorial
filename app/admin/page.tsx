@@ -1,4 +1,5 @@
 import {Metadata} from "next";
+import './admin-css.css';
 
 export const metadata: Metadata = {
     title: 'Admin page',

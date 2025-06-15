@@ -6,9 +6,9 @@ export default async function ProductsList(){
         setTimeout(()=>{resolve('is loading')}, 2000)
     })
     return (
-        <div className="container">
+        <div className="max-w-7xl mx-auto flex p-4">
             <h1 className="H1">{'this is product list page'}</h1>
-            <ul className="flex flex-column">
+            <ul className="flex flex-row">
                 <li><Link href="/products/1">prod 1</Link></li>
                 <li><Link href="/products/2">prod 2</Link></li>
                 <li><Link href="/products/3">prod 3</Link></li>
