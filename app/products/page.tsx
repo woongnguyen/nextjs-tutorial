@@ -1,6 +1,10 @@
+import './prod-style.css'
 import Link from "next/link";
 
-export default function ProductsList(){
+export default async function ProductsList(){
+    await new Promise((resolve) =>{
+        setTimeout(()=>{resolve('is loading')}, 2000)
+    })
     return (
         <div className="container">
             <h1 className="H1">{'this is product list page'}</h1>
