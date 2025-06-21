@@ -21,7 +21,7 @@ export function HeaderProvider({ children }: { children: ReactNode }) {
   return (
     <HeaderContext.Provider value={{ setExtraHeader }}>
       <Header extra={extraHeader} />
-      {children}
+      <div className="h-[calc(100vh-112px)] overflow-hidden overflow-y-auto">{children}</div>
     </HeaderContext.Provider>
   )
 }

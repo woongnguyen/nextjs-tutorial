@@ -1,4 +1,4 @@
-'use client';   
+'use client';
  
 export default function Card({ children }: { children: React.ReactNode }) {
   return (

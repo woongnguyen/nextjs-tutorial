@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { HeaderProvider } from "./_lib/HeaderContext";
+import './globals.css'
  
 export const metadata: Metadata = {
   title: {
@@ -13,15 +14,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="vi">
+    <html lang="vi" data-theme="light">
       <body>
         <div className="container">
           <HeaderProvider>
             {children}
           </HeaderProvider>
-          <footer className="bg-black-300">
-            <div className="max-w-7xl"></div>
-            <h6>Keep in touch</h6>
+          <footer className="bg-black/80">
+            <div className="max-w-7xl mx-auto flex justify-between p-4 text-white">
+              <h6>Keep in touch</h6>
+            </div>
           </footer>
         </div>
       </body>
